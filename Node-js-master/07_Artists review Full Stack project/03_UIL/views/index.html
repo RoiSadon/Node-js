@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Art</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Welcome to Artist Review</h1>
+    <h2>Get all Artists</h2>
+    <table border="1" id="artists"> </table>
+    <h2>Add new Artist</h2>
+    <div class="page-wrapper">  
+    <div>
+            <label>name:</label>
+            <input type="text" id="new_name" maxlength="30" />
+        </div>
+        <div>
+            <label>category:</label>
+            <select id="new_category">
+                <option value="trance">trance</option>
+                <option value="celtic">celtic</option>
+                <option value="pop">pop</option>
+                <option value="country">country</option>
+                <option value="rap">rap</option>
+                <option value="traditional">traditional</option>
+            </select>
+        </div>
+
+        <div>
+            <label>country:</label>
+            <input type="text" id="new_country" maxlength="30" />
+        </div>
+
+        <div>
+            <label>best_song:</label>
+            <input type="text" id="new_best_song" maxlength="256" />
+        </div>
+
+        <button onclick="addArtist()">Add new artist</button>
+    </div>
+
+    <h2>Update artist</h2>
+    <div class="page-wrapper">
+        <div>
+            <label>Select the id of the artist:</label>
+            <select id="artist_update_id"></select>
+        </div>
+        <div>
+            <label>best_song:</label>
+            <input type="text" id="edit_best_song" />
+        </div>
+        <button onclick="editArtist()">Edit the artist</button>
+    </div>
+
+
+    <h2>Delete artist</h2>
+    <div class="page-wrapper">
+        <div>
+            <label>Select the id of the artist:</label>
+            <select id="artist_delete_id"></select>
+        </div>
+        <button onclick="deleteArtist()">Delete the artist</button>
+    </div>
+</body>
+</html>
